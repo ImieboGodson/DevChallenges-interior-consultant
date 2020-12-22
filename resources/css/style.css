@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Crimson Pro', 'Lora', 'Montserrat';
+    background-color: #181719;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+
+/* Navbar */
+.navbar {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border: 1px solid #ffffff;
+}
+
+.logo p {
+    padding: 10px;
+    font-family: 'Crimson Pro';
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 10;
+}
+
+ul {
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li a{
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.active-page {
+    font-weight: bold;
+}
+
+
+/* Hero */
+.hero {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    margin-bottom: 30px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+}
+
+.hero-text p {
+    width: 340px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.hero-text a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+i {
+    font-size: 50px;
+    z-index: 5;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.card {
+    bottom: -90px;
+    right: 30px;
+    position: absolute;
+    padding: 15px;
+    width: 55%;
+    background-color: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.personal-details {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.personal-details img {
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.name-title-div {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.name-title-div .name {
+    margin: 5px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.name-title-div .title {
+    margin: 2px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.description {
+    margin: 10px;
+}
+
+.description h1 {
+    width: 70%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 31px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #A9A9A9;
+}
+
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar-toggler i {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .navlinks-div {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #181719;
+        z-index: 5;
+    }
+
+    .navlinks-div.active {
+        display: flex;
+    }
+
+    .navlinks-div .navlinks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlinks-div .navlinks li {
+        margin: 20px 0;
+    }
+
+    .hero {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .hero-text p {
+        width: 65%;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card {
+        width: 80%;
+        right: 20px;
+    }
+
+    .personal-details img {
+        width: 45px;
+    }
+
+    .name-title-div .name {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .name-title-div .title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .description h1 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        border-top: 1px solid #ffffff;
+    }
+}
