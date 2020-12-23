@@ -38,7 +38,9 @@
 ## Overview
 
 
- I really explored with this one, tried different ways to achieve the required layout, learnt a lot in the process and i also got stuck trying to experiment with how I would arrive at the outcome. I used CSS Grid in structuring my hero section(hero-image and hero-texts) making it as responsive as possible without so much altering with media queries.
+ I really explored with this one, tried different ways to achieve the required layout, learnt a lot in the process and I also got stuck trying to experiment with how I would arrive at the outcome. I used CSS Grid in structuring my hero section(hero-image and hero-texts) making it as responsive as possible without so much altering with media queries.
+
+ I also decided to account for other screen sizes apart from the required mobile phone and laptop views.
 
 You can checkout the [demo](https://this-interior.netlify.app/).
 
